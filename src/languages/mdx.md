@@ -25,7 +25,7 @@ Then, you can import a `.mdx` file into your JavaScript and render it using Reac
 {% samplefile "app.js" %}
 
 ```js
-import Hello from './hello.mdx';
+import Hello from "./hello.mdx";
 
 export function App() {
   return <Hello />;
@@ -46,7 +46,7 @@ This is a pretty cool MDX file.
 
 ## MDX v3 usage
 
-If you're using MDX v3, community plugin [`parcel-transformer-mdx`][1] is recommended, Babel & TypeScript configuration can be loaded automatically.
+If you're using MDX v3, you can use the community plugin [`parcel-transformer-mdx`](https://www.npmjs.com/package/parcel-transformer-mdx).
 
 ### Installation
 
@@ -61,10 +61,10 @@ npm i @parcel/config-default parcel-transformer-mdx -D
 
 ```json
 {
-    "extends": "@parcel/config-default",
-    "transformers": {
-        "*.{md,mdx}": ["parcel-transformer-mdx"]
-    }
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{md,mdx}": ["parcel-transformer-mdx"]
+  }
 }
 ```
 
